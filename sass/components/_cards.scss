@@ -1,0 +1,87 @@
+.oculto {
+  display: none;
+}
+
+.cards {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 30px 30px 30px;
+  background-color: $light;
+}
+
+.cards h2.header {
+  margin: 0 0 30px 0;
+}
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $cor-border;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: $light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content:hover {
+  color: $light;
+}
+
+.content:hover a {
+  border-color: white;
+  background: $btn_ver_mais_hover;
+}
+
+.content .fab {
+  font-size: 70px;
+  margin: 16px 0;
+}
+
+.content > * {
+  flex: 1 1 100%;
+}
+
+.content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: $dark;
+  margin: 30px 0px 50px 0;
+}
+
+.content p {
+  font-size: 18px;
+  color: $dark;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+#data {
+  margin-bottom: 20px;
+}
+
+.content a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: $cor-btn_ver_mais;
+  font-size: 16px;
+  font-weight: bold;
+  color: $light;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .content .fab {
+  display: none;
+}
+
+@media screen and (min-width: 901px) {
+  .btn_cards_mobile {
+    display: none;
+  }
+}

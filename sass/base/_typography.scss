@@ -1,0 +1,122 @@
+/* Tipografia global */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Impact";
+  src: url("impact.ttf") format("truetype");
+  font-weight: normal;
+  font-style: oblique;
+}
+.main-nav {
+  a {
+    text-align: center;
+    color: $dark;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+}
+
+.header {
+  .title-header {
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-weight: 900;
+    color: $light;
+    font-size: 3rem;
+  }
+
+  .text-header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: $destaque_texto;
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 900px) {
+    .title-header {
+      font-size: 2rem;
+    }
+
+    .text-header {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  color: $light;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.button-container {
+  .menu-btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.cards {
+  .content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+  }
+  .content p {
+    font-size: 18px;
+    color: $dark;
+    line-height: 1.5;
+  }
+  #data {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #verMais-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 310px;
+    color: $dark;
+  }
+  .cards h2.header {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.btn_cards_mobile {
+  .content_atl h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 30px 0 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  @media screen and (max-width: 400px) {
+    .content_atl h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+  }
+}
+
+#assinatura {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: $light;
+  line-height: 1.5;
+}

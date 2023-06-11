@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/section_about";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/newsMenu";
+@import "components/btnCards";
+@import "components/cards";
+@import "components/dropdown";
+
+@import "pages/home";
