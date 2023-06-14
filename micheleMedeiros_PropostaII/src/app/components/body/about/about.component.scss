@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
+
 .content1 {
-  font-family: "Roboto", sans-serif;
-  max-width: 100%;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  background-color: #f7f0ea;
 
   &-blockLeft {
     display: flex;
@@ -10,57 +15,202 @@
     flex-direction: row-reverse;
   }
   &-imgR img {
-    width: 500px;
+    width: 450px;
     height: auto;
   }
-  &-title {
+  &-imgR_II img {
+    display: none;
+  }
+  &-titleA {
     color: black;
     text-align: left;
-    font-size: 45px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
+    font-size: 50px;
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
   }
   &-text1 {
     padding: 0px;
     font-size: 16px;
     color: black;
     font-size: 18px;
-    max-width: 600px;
+    max-width: 40%;
     text-align: justify;
     line-height: 27px;
     margin-left: 20px;
     margin-right: 15%;
   }
+
+  &-buttonA {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  &-buttonA:hover {
+    color: red;
+  }
 }
 
 .content2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
   max-width: 100%;
+  background-color: #f7f0ea;
 
   &-blockRight {
     display: flex;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 20px;
+    padding-bottom: 100px;
   }
   &-imgL img {
-    width: 300px;
+    width: 450px;
     height: auto;
   }
-  &-title {
+  &-imgL_II img {
+    display: none;
+  }
+  &-titleA {
     color: black;
     text-align: left;
-    font-size: 45px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
+    font-size: 50px;
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
   }
   &-text2 {
     padding: 0px;
     font-size: 16px;
     color: black;
     font-size: 18px;
-    max-width: 600px;
+    max-width: 50%;
     text-align: justify;
     line-height: 27px;
+    padding-left: 10%;
+    margin-right: 50px;
+  }
+  &-buttonA {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  &-buttonA:hover {
+    color: red;
+  }
+}
+
+@media (max-width: 900px) {
+  .content1 {
+    &-blockLeft {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      padding-bottom: 150px;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    &-titleA {
+      text-align: center;
+    }
+    &-text1 {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 70%;
+    }
+    &-imgR img {
+      display: none;
+    }
+    &-imgR_II img {
+      display: block;
+      margin: 20px auto;
+      width: 420px;
+      height: auto;
+    }
+    &-buttonA {
+      margin-bottom: 50px;
+    }
+  }
+
+  .content2 {
+    justify-content: center;
+    &-blockRight {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centralizar verticalmente */
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 100px;
+      margin: 0 auto;
+    }
+    &-text2 {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 80%;
+    }
+    &-imgL img {
+      display: none;
+    }
+    &-imgL_II img {
+      display: block;
+      margin: 20px auto;
+      width: 450px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .content1 {
+    &-blockLeft {
+      align-items: center;
+    }
+    &-imgR_II img {
+      width: 300px;
+      height: auto;
+    }
+    &-buttonA {
+      margin-bottom: 20px;
+    }
+  }
+  .content2 {
+    &-blockRight {
+      align-items: center;
+    }
+    &-imgL_II img {
+      width: 350px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .content1 {
+    &-blockLeft {
+      align-items: center;
+      padding-bottom: 50px;
+    }
+    &-imgR_II img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  .content2 {
+    &-blockRight {
+      align-items: center;
+    }
+    &-imgL_II img {
+      width: 250px;
+      height: auto;
+    }
   }
 }
