@@ -35,7 +35,7 @@
     font-size: 18px;
     max-width: 40%;
     text-align: justify;
-    line-height: 27px;
+    line-height: 2;
     margin-left: 20px;
     margin-right: 15%;
   }
@@ -44,13 +44,14 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: black;
+    color: #4f4f4f;
     font-size: 16px;
     transition: color 0.3s ease;
   }
 
   &-buttonA:hover {
-    color: red;
+    color: #1f1f1f;
+    font-weight: 600;
   }
 }
 
@@ -87,7 +88,7 @@
     font-size: 18px;
     max-width: 50%;
     text-align: justify;
-    line-height: 27px;
+    line-height: 2;
     padding-left: 10%;
     margin-right: 50px;
   }
@@ -95,13 +96,14 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: black;
+    color: #4f4f4f;
     font-size: 16px;
     transition: color 0.3s ease;
   }
 
   &-buttonA:hover {
-    color: red;
+    color: #1f1f1f;
+    font-weight: 600;
   }
 }
 
@@ -123,7 +125,8 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      max-width: 70%;
+      line-height: 2;
+      max-width: 80%;
     }
     &-imgR img {
       display: none;
@@ -154,6 +157,7 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto;
+      line-height: 2;
       padding: 0;
       max-width: 80%;
     }
@@ -173,6 +177,7 @@
   .content1 {
     &-blockLeft {
       align-items: center;
+      padding-bottom: 100px;
     }
     &-imgR_II img {
       width: 300px;
@@ -180,6 +185,9 @@
     }
     &-buttonA {
       margin-bottom: 20px;
+    }
+    &-text1 {
+      line-height: 2;
     }
   }
   .content2 {
@@ -189,6 +197,9 @@
     &-imgL_II img {
       width: 350px;
       height: auto;
+    }
+    &-text2 {
+      line-height: 2;
     }
   }
 }
@@ -203,6 +214,13 @@
       width: 250px;
       height: auto;
     }
+    &-titleA {
+      font-size: 38px;
+    }
+    &-text1 {
+      font-size: 16px;
+      line-height: 2;
+    }
   }
   .content2 {
     &-blockRight {
@@ -211,6 +229,10 @@
     &-imgL_II img {
       width: 250px;
       height: auto;
+    }
+    &-text2 {
+      font-size: 16px;
+      line-height: 2;
     }
   }
 }
