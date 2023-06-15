@@ -1,5 +1,7 @@
-.navbar-brand img {
-  width: 130px; /* Ajuste o valor conforme necessário */
-  height: auto; /* Permite manter a proporção original da imagem */
-  display: block; /* Garante que a imagem se comporte como um bloco */
+.navbar {
+  &-brand img {
+    width: 130px;
+    height: auto;
+    display: block;
+  }
 }
