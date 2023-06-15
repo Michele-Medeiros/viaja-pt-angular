@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap");
 body {
   width: 100%;
+  background-color: #fcfcfc;
 }
 .destinos {
   display: flex;
@@ -106,7 +107,7 @@ body {
 @media (max-width: 600px) {
   .gallery {
     &-item img {
-      width: 350px;
+      width: 340px;
       height: auto;
       padding: 0 20px;
     }
